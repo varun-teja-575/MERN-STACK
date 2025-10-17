@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window Object Example</title>
+</head>
+<body>
+<h1>Window Object Demo (24B11CS508) </h1>
+<button onclick="showWindowInfo()">Show Window Info</button>
+<button onclick="openNewWindow()">Open New Window</button>
+<button onclick="closeNewWindow()">Close New Window</button>
+
+<div id="output"></div>
+
+<script>
+	let newWin;
+	
+	function showWindowInfo() {
+		//Using document properties
+		let width = window.innerWidth;
+		let height = window.innerHeight;
+		let locationHref = window.location.href;
+
+		// Display info
+		
+		
+		document.getElementById("output").innerHTML = 
+		"Window Width: " + width + "px<br>" +
+		"Window Height: " + height + "px<br>" +
+		"Current URL: " + locationHref;
+		}
+
+		
+
+		function openNewWindow() {
+		// Using window.open()
+		newWin = window.open("https://www.google.com", "Example", "width=400,height=300"); 
+		}
+
+		function closeNewWindowInfo() {
+		// Using window.close()
+		if(newWin) {
+			newWin.close();
+			}
+		}
+	</script>
+</body>
+</html>

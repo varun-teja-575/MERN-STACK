@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Dispalying Outputs in different ways</title>
+
+</head>
+<body>
+	<h1>JavaScript output Methods</h1>
+	<button onclick="showAlert()">Show Alert</button>
+	<button onclick="logtoconsole()">Log to console</button>
+	<button onclick="writetodocument()">Write to document</button>
+	<button onclick="updateDOM()">update DOM</button>
+	<div id="outputArea">Output will appear here...</div>
+	<script>
+	function showAlert()
+	{
+		alert("Alert Message");
+	}
+	function logtoconsole()
+	{
+		console.log("Console Message");
+	}
+	function writetodocument()
+	{
+		document.write("Written to Document");
+	}
+	function updateDOM()
+	{
+		document.getElementById("outputArea").innerText="this text was inserted using DOM manipulation";
+	}
+	</script>
+</body>
+</html>

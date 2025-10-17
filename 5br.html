@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>fixed tilted background(horizontal rotate) </title>
+<style>
+/* container content so you can scroll the page*/
+body{
+min-height:300vh;/8make page scrollable to tset fixed behaviour*/
+margin:0;
+font-family:system-ui,Arial,sans-serif;
+}
+/* fixed background image element*/
+.tilted-bg{
+position:fixed;
+left:50%;/* center horizontally*/
+top:50vh;/* halfway down the view port*/
+transform:translate(-50%,-50%) rotateZ(-12deg) translateZ(0);/* translate to center ,thenrotate; translateZ(0) triggers GPU*/
+width:60vw;
+height:40vh;
+background-image:url("C:\Users\prasa\OneDrive\Pictures\Screenshots\Screenshot 2025-07-13 120214.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+pointer-events:none;/*so it wont block clicks*/
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+z-index:9999;/* keep it on top(adjust if necessary)*/
+opacity:0.95;
+will-change:transform;
+}
+/*sample page content*/
+main{
+padding:2rem;
+}
+</style>
+</head>
+<body>
+<div class="tilted-bg" aria-hidden="true"></div>
+<main>
+<h1>Page content (24B11CS508)</h1>
+<p>scroll to see tilted background ramin fixed halfway down the viweport</p>
+<p>adjust<code>width</code>,<code>height</code>,and rotation angle in the css as needed</p>
+<!--add content to scroll-->
+<p style="margin-top:140vh">this line is roughly below the fold to show scrolling</p>
+</main>
+</body>
+</html>

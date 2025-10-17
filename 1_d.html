@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thumbnail Image Gallery</title>
+    <style>   
+        body{
+            font-family: arial,sans-serif;
+            text-align: center;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px; 
+        }
+        .gallery a img{ 
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition:transform 0.3s;
+        }
+        .gallery a img:hover{
+            transform: scale(1.2);
+            border-color: #666;
+        }
+
+
+    </style>
+</head>
+<body >
+    	<h1>My image Gallery (24B11CS508)</h1>
+	<p>Click on a thumbnail to view the full- sized image</p>
+	
+	<div class="Gallery">
+		<a href="D:\ACTIVITY\vk-as-5.jpg" target="_blank">
+			<img src="D:\ACTIVITY\vk-as-5.jpg" alt="Image 1" width="100" height="100">
+		</a>
+
+		<a href="D:\ACTIVITY\930ffcbfd23f3a882737c042766669a3.jpg" target="_blank">
+			<img src="D:\ACTIVITY\930ffcbfd23f3a882737c042766669a3.jpg" alt="Image 2" width="100" height="100">
+		</a>
+
+		<a href="D:\ACTIVITY\b507a7e8fd68322db1a6a1a16a5198ad.jpg" target="_blank">
+			<img src="D:\ACTIVITY\b507a7e8fd68322db1a6a1a16a5198ad.jpg" alt="Image 3" width="100" height="100">
+		</a>
+
+		<a href="D:\ACTIVITY\vk-as-3.webp" target="_blank">
+			<img src="D:\ACTIVITY\vk-as-3.webp" alt="Image 4" width="100" height="100">
+		</a>
+
+		<a href="D:\ACTIVITY\vk-as-6.jpg" target="_blank">
+			<img src="D:\ACTIVITY\vk-as-6.jpg" alt="Image 4" width="100" height="100">
+		</a>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document Object Example</title>
+</head>
+<body>
+<h1 id="heading">Hello World!  (24B11CS508)</h1>
+<p>This is a demo of document Object.</p>
+
+<button onclick="showInfo()">Show Document Info</button>
+
+<div id="output"></div>
+
+<script>
+	function showInfo() {
+		//Using document properties
+		let title = document.title;
+		let url = document.url;
+		let lastModified = document.lastModified;
+		
+		document.getElementById("heading").style.color = "blue";
+		document.getElementById("output").innerHTML = 
+		"Title: " + title + "<br>" +
+		"URL: " + url + "<br>" +
+		"Last Modified: " + lastmodified;
+		}
+	</script>
+</body>
+</html>
